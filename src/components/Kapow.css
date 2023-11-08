@@ -1,0 +1,20 @@
+.kapow {
+    width: 300px;
+    /* Set the width of the KAPOW image */
+    height: 300px;
+    /* Set the height of the KAPOW image */
+    background-size: cover;
+    animation: kapow-animation 1s forwards;
+}
+
+@keyframes kapow-animation {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

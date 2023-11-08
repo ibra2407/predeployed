@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'superfont';
+  src: url('./img/superfont.ttf') format('truetype');
+}
+
+* {
+  font-family: 'superfont', sans-serif;
+  /* Set font-family to 'superfont' and fallback to sans-serif if 'superfont' is not available */
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+body {
+  background: url('./img/BG.png');
+  background-size: cover;
+  /* This will resize the background image to cover the whole container */
+  background-attachment: fixed;
+  /* This will make the background image static against scrolling */
+}
+
+.wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to bottom, #5d82fc, rgb(213, 221, 252));
+  padding: 10px;
+  /* Add padding as needed */
+  border-radius: 10px;
+  /* Optional: Add border-radius for rounded corners */
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  text-align: left;
+  color: white;
+}
+
+.large-text {
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 10px 10px 20px rgb(0, 0, 0);
+  letter-spacing: 2px;
+  /* Adjust margin as needed */
+}
+
+.centered-heading {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.App {
+  text-align: center;
+}
+
+.btn {
+  background: hsl(200, 100%, 50%, 0.1);
+  border: 1px solid hsl(200, 100%, 50%);
+  color: hsl(200, 100%, 50%);
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background: hsl(200, 100%, 50%, 0.2);
+}
+
+.btn.btn-danger {
+  background: hsl(0, 100%, 40%, 0.1);
+  border: 1px solid hsl(0, 83%, 54%);
+  color: hsl(0, 100%, 55%);
+}
+
+.btn.btn-danger:hover,
+.btn.btn-danger:focus-visible {
+  background: hsl(0, 100%, 40%, 0.2);
+}
+
+.tutorial-button {
+  padding: 5px;
+  font-size: 18px;
+  background-color: #ffb560;
+  color: rgb(255, 255, 255);
+  border: 2px solid hsl(0, 0%, 0%);
+  border-radius: 5px;
+
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.tutorial-button:hover {
+  background-color: #61ff89;
+  color: rgb(0, 0, 0);
+}
